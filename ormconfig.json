@@ -6,14 +6,15 @@
   "password": "blablabla5",
   "database": "crud",
   "entities": [
-    "**/*.entity{.ts,.js}"
+    "**/*.entity.js"
   ],
   "migrationsTableName": "migration",
   "migrations": [
     "src/migration/*.ts"
   ],
   "cli": {
-    "migrationsDir": "src/migration"
+    "migrationsDir": "src/migration",
+    "entitiesDir": "**/*.entity.js"
   },
   "ssl": false
 }
